@@ -1,0 +1,265 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#ratingContainer, #conditionsContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#stars {
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row; /* Aligner horizontalement les étoiles */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.star {
+    margin: 0 5px; /* Espacement horizontal entre les étoiles */
+    color: #ddd;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.star:hover,
+.star.hovered,
+.star.selected {
+    color: gold;
+    transform: scale(1.2);
+}
+
+#ratingValue {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[disabled] {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Thank you message */
+#thankYouMessage {
+    display: none;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Conditions page styles */
+#conditionsContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#conditionsContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+}
+
+/* Centrer tout le contenu du body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrer le texte des titres et des paragraphes */
+h1, p {
+    text-align: center;
+    width: 100%;
+}
+
+/* Style pour le formulaire et son contenu */
+form {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+}
+
+/* Global reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the feedback container */
+#feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content vertically */
+    align-items: center; /* Centers horizontally */
+    height: auto; /* Auto height to fit content */
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 20px; /* Increase padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to make the container a bit interactive */
+#feedbackContainer:hover {
+    transform: translateY(-5px);
+}
+
+/* Header styles */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Adjusted paragraph style with more space */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Adjusted to move it further down */
+}
+
+/* Input fields styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Added margin-top to give space above the button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Thank you message */
+#thankYouMessage {
+    font-size: 1.2em;
+    color: green;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #feedbackContainer {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 1em;
+    }
+}

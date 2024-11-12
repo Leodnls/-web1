@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vos Retours</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="feedbackContainer">
+        <h1>Vos Retours</h1>
+        <p>Merci de bien vouloir nous partager vos remarques, pour que nous puissions nous améliorer.</p>
+
+        <form id="feedbackForm">
+            <label for="firstName">Prénom (facultatif) :</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Votre prénom"><br><br>
+
+            <label for="lastName">Nom (facultatif) :</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Votre nom"><br><br>
+
+            <label for="email">Adresse e-mail (facultatif) :</label><br>
+            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail"><br><br>
+
+            <label for="feedback">Votre retour (obligatoire) :</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Écrivez vos commentaires ici..." required></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <p id="thankYouMessage" style="display: none; color: green;">Merci pour vos retours ! Nous les avons bien reçus.</p>
+    </div>
+
+    <script src="assets/js/feedback.js"></script>
+</body>
+</html>
