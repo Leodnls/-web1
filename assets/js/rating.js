@@ -18,7 +18,7 @@ stars.forEach(star => {
         // Redirection en fonction de l'étoile cliquée
         if (rating == 5) {
             // Redirection vers un lien personnalisé pour 5 étoiles
-            window.location.href = "https://tonchoix.com"; // Remplace ce lien par ton propre choix
+            window.location.href = "https://www.google.com/search?q=bFC+Food+Avis*&rlz=1C1ONGR_frFR974FR974&oq=bFC+Food+Avis*&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIMCAEQIxgnGIAEGIoFMgwIAhAjGCcYgAQYigUyDAgDEAAYQxiABBiKBTIKCAQQABixAxiABDIQCAUQABiDARixAxiABBiKBTITCAYQLhiDARjHARixAxjRAxiABDINCAcQABiDARixAxiABDITCAgQLhiDARjHARixAxjRAxiABDITCAkQLhiDARjHARixAxjRAxiABNIBCTU3ODdqMGoxNagCCbACAQ&sourceid=chrome&ie=UTF-8"; // Remplace ce lien par ton propre choix
         } else {
             // Redirection vers la page de feedback pour 1 à 4 étoiles
             window.location.href = "feedback.html";
